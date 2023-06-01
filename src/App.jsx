@@ -1,13 +1,17 @@
+import Card from './components/GlobalStyle/Cards/Card';
 import Styles from './components/GlobalStyle/Styles';
+import ThemeProvider  from './components/Theme/Theme';
 
 function App() {
 
   return (
     <>
-      <div>
+      <ThemeProvider >
         <Styles />
-        <h1>TESTE</h1>
-      </div>
+        <Card>
+          <h1>TESTE</h1>
+        </Card>
+      </ThemeProvider>
     </>
   )
 }
