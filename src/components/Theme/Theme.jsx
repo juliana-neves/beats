@@ -1,4 +1,4 @@
-import { ThemeProvider  } from '@emotion/react';
+import { ThemeProvider } from '@emotion/react';
 
 const theme = {
     color: {
@@ -6,32 +6,9 @@ const theme = {
         black: '#161616',
         details: '#E31837',
         grey: '#757575',
+        greyLight: '#AEAEAE',
         beige: '#F0F0F0',
         neutral: '#E0E0DE',
-        warning: '',
-        success: '',
-        focus: '',
-
-        // primary: {
-        //     a: '',
-        //     b: '',
-        //     c: '',
-        // },
-        // secondary: {
-        //     a: '',
-        //     b: '',
-        //     c: '',
-        // },
-        // neutrals: {
-        //     a: '',
-        //     b: '',
-        //     c: '',
-        // },
-        // dark: {
-        //     a: '',
-        //     b: '',
-        //     c: '',
-        // },
     },
     spacing: {
         xxs: '4px',
@@ -41,11 +18,14 @@ const theme = {
         l: '32px',
         xl: '48px',
         xxl: '64px',
-    }
+    },
+    fontFamily: "'Open Sans', sans-serif",
 }
 
 export default function Theme({ children }) {
-    return <ThemeProvider theme={theme}>
-        { children }
+    return (
+        <ThemeProvider theme={theme}>
+            {children}
         </ThemeProvider>
+    );
 }
