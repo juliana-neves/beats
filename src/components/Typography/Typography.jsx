@@ -7,12 +7,12 @@ const components = {
 
 const styles = {
     h1: `
-        font-weight: 600;
+        font-weight: 800;
         font-size: 40px;
         margin: 24px auto;
         `,
     h2: `
-        font-weight: 500;
+        font-weight: 600;
         font-size: 32px;
         margin: 16px auto;
         `,
@@ -20,8 +20,7 @@ const styles = {
         font-weight: 400;
         font-size: 24px;
         margin: 8px auto;
-    `,
-
+        `,
     text: `
         font-weight: 400;
         font-size: 20px;
@@ -35,9 +34,9 @@ const styles = {
         font-size: 12px;
     `,
     textSmallBold: `
-        font-weight: 500;
+        font-weight: 600;
         font-size: 12px;
-    `,
+    `
 }
 
 export default function Typography({ variant, component, children }) {

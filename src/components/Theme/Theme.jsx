@@ -6,9 +6,10 @@ const theme = {
         black: '#161616',
         details: '#E31837',
         grey: '#757575',
-        greyLight: '#AEAEAE',
+        greyLight: '#89939E',
         beige: '#F0F0F0',
         neutral: '#E0E0DE',
+        inputHover: '#F5F7FA',
     },
     spacing: {
         xxs: '4px',
@@ -19,7 +20,7 @@ const theme = {
         xl: '48px',
         xxl: '64px',
     },
-    fontFamily: "'Open Sans', sans-serif",
+    fontFamily: "Inter, sans-serif",
 }
 
 export default function Theme({ children }) {

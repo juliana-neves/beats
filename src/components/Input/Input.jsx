@@ -12,15 +12,18 @@ const StyledInput = styled.input`
     width: 100%;
     box-sizing: border-box;
     margin-top: ${props => props.theme.spacing.xs};
-    margin-bottom: ${props => props.theme.spacing.s};
+    margin-bottom: ${props => props.theme.spacing.m};
     background: ${props => props.theme.color.white};
     border: 1px solid;
     border-color: ${props => props.theme.color.greyLight};
-    border-radius: ${props => props.theme.spacing.s};
+    border-radius: ${props => props.theme.spacing.xs};
     height: 40px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    padding: ${props => props.theme.spacing.s};
+    &:hover {
+        border-color: ${props => props.theme.color.grey};
+    }
 `
 
 
