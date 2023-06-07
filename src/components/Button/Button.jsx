@@ -1,5 +1,4 @@
-import ButtonPrimary from "./ButtonPrimary";
-import ButtonOutline from "./ButtonOutline";
+import { ButtonPrimary, ButtonOutline } from "./ButtonStyles";
 
 function Button({ type, children, variant }) {
 

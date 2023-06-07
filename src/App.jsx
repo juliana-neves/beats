@@ -2,11 +2,11 @@ import Card from './components/Cards/Card';
 import Styles from './components/GlobalStyle/Styles';
 import Input from './components/Input/Input';
 import ThemeProvider from './components/Theme/Theme';
-import Typography from './components/Typography/Typography';
 import { Container, Row, Col } from 'react-grid-system';
+// import { Typography } from './components/Typography/Typography';
 import Button from './components/Button/Button';
 import Dropdown from './components/Dropdown/Dropdown';
-
+import Footer from './components/Footer/Footer';
 
 const countriesEU = [
   { "text": "Austria", "value": "AT" },
@@ -48,7 +48,7 @@ function App() {
         <Row justify='center'>
           <Col lg={6} md={8} sm={12}>
             <Card>
-              <Typography variant="h1" component="h1">Create you account</Typography>
+              {/* <Typography>Create you account</Typography> */}
               <Row>
                 <Col>
                   <Input label={'First Name'} placeholder="Name" />
@@ -56,7 +56,7 @@ function App() {
               </Row>
               <Row>
                 <Col lg={4} md={4} sm={4}>
-                  <Dropdown title="Country" options={countriesEU}/>
+                  <Dropdown title="Country" options={countriesEU} />
                 </Col>
                 <Col lg={8} md={8} sm={8}>
                   <Input label={'County'} placeholder="County" />
@@ -81,7 +81,9 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </ThemeProvider >
+
 
   )
 }
