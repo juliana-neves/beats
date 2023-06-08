@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
-import { text } from "../Typography/Typography";
 
 const ButtonPrimary = styled.button`
     height: 40px;
     width: 100%;
     border: none;
     cursor: pointer;
-    ${text};
+    font-size: 14px;
+    font-weigh: 400;
     background-color: ${props => props.theme.color.black};
     border-radius: ${props => props.theme.spacing.xs};
     color: ${props => props.theme.color.white};
@@ -21,7 +21,8 @@ const ButtonOutline = styled.button`
     height: 40px;
     width: 100%;
     border: 1px solid;
-    ${text};
+    font-size: 14px;
+    font-weigh: 400;
     background-color: ${props => props.theme.color.white};
     border-color: ${props => props.theme.color.black};
     border-radius: ${props => props.theme.spacing.xs};

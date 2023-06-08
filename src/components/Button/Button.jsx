@@ -1,4 +1,5 @@
 import { ButtonPrimary, ButtonOutline } from "./ButtonStyles";
+import { TextButton } from "../Typography/Typography";
 
 function Button({ type, children, variant }) {
 
@@ -12,10 +13,12 @@ function Button({ type, children, variant }) {
     if (variant === 'outline') {
         return (
             <ButtonOutline>
-                {children}
+                <TextButton>
+                    {children}
+                </TextButton>
             </ButtonOutline>
         );
-    } 
+    }
     return null;
 
 }

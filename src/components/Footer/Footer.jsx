@@ -1,7 +1,8 @@
 import { Container, Row, Col } from 'react-grid-system';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { linkProducts, linkSupport, linkCompany, linkLegal } from './FooterLinks';
-import { FooterContainer, TitleFooter, Link, IconLink } from './FooterStyled';
+import { FooterContainer, Link, IconLink } from './FooterStyled';
+import { Heading4, TextLink } from '../Typography/Typography';
 
 const beatsURL = 'https://www.beatsbydre.com';
 
@@ -19,38 +20,46 @@ function Footer() {
         <FooterContainer>
             <Container>
                 <Row>
-                    <Col lg={3} md={3} sm={0}>
-                        <TitleFooter>Products</TitleFooter>
+                    <Col lg={3} md={3}>
+                        <Heading4>Products</Heading4>
                         {linkProducts.map((link, index) => (
                             <Link key={index} href={linkFooter(link.url)} >
-                                {link.text}
+                                <TextLink>
+                                    {link.text}
+                                </TextLink>
                             </Link>
                         ))}
                     </Col>
-                    <Col lg={3} md={3} sm={0}>
-                        <TitleFooter>Support</TitleFooter>
+                    <Col lg={3} md={3}>
+                        <Heading4>Support</Heading4>
                         {linkSupport.map((link, index) => (
                             <Link key={index} href={linkFooter(link.url)}>
-                                {link.text}
+                                <TextLink>
+                                    {link.text}
+                                </TextLink>
                             </Link>
                         ))}
                     </Col>
                     <Col lg={3} md={3} sm={0}>
-                        <TitleFooter>Company</TitleFooter>
+                        <Heading4>Company</Heading4>
                         {linkCompany.map((link, index) => (
                             <Link key={index} href={linkFooter(link.url)}>
-                                {link.text}
+                                <TextLink>
+                                    {link.text}
+                                </TextLink>
                             </Link>
                         ))}
-                        <TitleFooter>Legal</TitleFooter>
+                        <Heading4>Legal</Heading4>
                         {linkLegal.map((link, index) => (
                             <Link key={index} href={linkFooter(link.url)}>
-                                {link.text}
+                                <TextLink>
+                                    {link.text}
+                                </TextLink>
                             </Link>
                         ))}
                     </Col>
                     <Col lg={3} md={3} sm={0}>
-                        <TitleFooter>Follow Us</TitleFooter>
+                        <Heading4>Follow Us</Heading4>
                         <IconLink href="https://www.facebook.com/beatsbydre">
                             <FaFacebook />
                         </IconLink>

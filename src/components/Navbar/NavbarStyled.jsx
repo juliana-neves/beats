@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { textBold } from "../Typography/Typography";
 
 export const MenuContainer = styled.nav`
     display: flex;
@@ -39,7 +38,6 @@ export const MenuItem = styled.li`
 
 export const MenuLink = styled.a`
     color: ${props => props.theme.color.black};
-    ${textBold};
     text-decoration: none;
 `
 
@@ -48,9 +46,9 @@ export const ButtonIconsWrapper = styled.div`
     align-items: center;
     border: none;
     cursor: pointer;
-    `
+`
 
-    export const ButtonIcon = styled.span`
+export const ButtonIcon = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;

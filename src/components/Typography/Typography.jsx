@@ -1,53 +1,58 @@
-import { css } from '@emotion/react'
+import styled from '@emotion/styled';
 
-export const heading1 = css`
+
+
+export const Heading1 = styled.h1`
     font-weight: 800;
     font-size: 40px;
     margin: 24px auto;
 `;
 
-export const heading2 = css`
+export const Heading2 = styled.h2`
     font-weight: 600;
     font-size: 32px;
     margin: 16px auto;
 `;
 
-export const heading3 = css`
-    font-weight: 400;
+export const Heading3 = styled.h3`
+    font-weight: 600;
     font-size: 24px;
     margin: 8px auto;
 `;
 
-export const heading4 = css`
+export const Heading4 = styled.h4`
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     margin: 8px auto;
+    color: ${props => props.theme.color.white};
+
 `;
 
-export const text = css`
+export const Text = styled.p`
     font-weight: 400;
     font-size: 16px;
 `;
 
-export const textBold = css`
+export const TextBold = styled.p`
     font-weight: 600;
     font-size: 16px;
 `;
-export const textSmall = css`
+export const TextSmall = styled.p`
     font-weight: 400;
     font-size: 12px;
 `;
 
-export const textSmallBold = css`
+export const TextSmallBold = styled.p`
     font-weight: 600;
     font-size: 12px;
 `;
 
-export function Typography({ variant, component, children }) {
+export const TextLink = styled.a`
+    font-size: 14px;
+    font-weight: 400;
+`
 
-    return (
-        <Typography variant={variant} component={component}>
-            {children}
-        </Typography>
-    );
-}
+export const TextButton = styled.button`
+    font-size: 16px;
+    font-weight: 400;
+`

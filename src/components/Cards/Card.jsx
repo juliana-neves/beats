@@ -5,6 +5,7 @@ const StyleDiv = styled.div`
     background: ${props => props.theme.color.white};
     border: 1px solid ${props => props.theme.color.beige};
     border-radius: ${props => props.theme.spacing.s};
+    margin: ${props => props.theme.spacing.xxl} 0;
 `
 
 export default function Card({children}) {

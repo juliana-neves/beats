@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
-import { text, textBold } from "../Typography/Typography";
 
 const LabelSelect = styled.label`
     display: block;
     box-sizing: border-box;
     position: relative;
+    font-size: 14px;
+    font-weigh: 400;
     ${props => props.theme.fontFamily};
-    ${text}
 `
 
 const Select = styled.button`
@@ -46,7 +46,7 @@ const SelectList = styled.ul`
     position: absolute;
     top: 100%;
     z-index: 1;
-    ${props => props.theme.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     background-color: ${props => props.theme.color.white};
     &:last-child {
         border-radius: 0 0 8px 8px;
@@ -69,11 +69,13 @@ const SelectItem = styled.li`
     cursor: pointer;
     ${props => props.theme.fontFamily};
     padding: ${props => props.theme.spacing.s};
-    ${text}
+    font-size: 14px;
+    font-weight: 400;
     width: ${props => props.theme.width.l};
     &:hover {
         background: ${props => props.theme.color.inputHover};
-        ${textBold}
+        font-size: 14px;
+        font-weigh: 600;
     }
 `
 
