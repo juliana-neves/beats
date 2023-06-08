@@ -20,6 +20,14 @@ const theme = {
         xl: '48px',
         xxl: '64px',
     },
+    height: {
+        s: '24px',
+        m: '40px',
+        l: '56px',
+    },
+    width: {
+        l: '100%',
+    },
     fontFamily: "Inter, sans-serif",
 }
 

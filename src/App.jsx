@@ -3,10 +3,11 @@ import Styles from './components/GlobalStyle/Styles';
 import Input from './components/Input/Input';
 import ThemeProvider from './components/Theme/Theme';
 import { Container, Row, Col } from 'react-grid-system';
-// import { Typography } from './components/Typography/Typography';
 import Button from './components/Button/Button';
 import Dropdown from './components/Dropdown/Dropdown';
 import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+
 
 const countriesEU = [
   { "text": "Austria", "value": "AT" },
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <ThemeProvider >
+      <Navbar/>
       <Styles />
       <Container>
         <Row justify='center'>

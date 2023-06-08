@@ -1,31 +1,32 @@
 import styled from "@emotion/styled";
+import { text, textBold } from "../Typography/Typography";
 
 const LabelSelect = styled.label`
     display: block;
-    width: 100%;
     box-sizing: border-box;
-    font-weight: 400;
     position: relative;
+    ${props => props.theme.fontFamily};
+    ${text}
 `
 
 const Select = styled.button`
-    color: ${props => props.optionSelected ? props.theme.color.grey : props.theme.color.greyLight};
-    height: 40px;
-    width: 100%;
-    font-family ${props => props.theme.fontFamily};
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    border: 1px solid;
+    cursor: pointer;
+    justify-content: space-between;
+    color: ${props => props.optionSelected ? props.theme.color.grey : props.theme.color.greyLight};
+    height: ${props => props.theme.height.m};
+    width: ${props => props.theme.width.l};
+    font-family ${props => props.theme.fontFamily};
     margin-top: ${props => props.theme.spacing.xs};
     margin-bottom: ${props => props.theme.spacing.xs};
     padding: ${props => props.theme.spacing.s};
     background: ${props => props.theme.color.white};
-    border: 1px solid;
     border-color: ${props => props.theme.color.greyLight};
     border-radius: ${props =>
         props.isOpen ? '8px 8px 0 0' : props.theme.spacing.xs};
-    cursor: pointer;
-    justify-content: space-between;
     color: ${props => props.activeFocus ? 'props.theme.color.details' : 'inherit'}
     &:hover {
         border-color: ${props => props.theme.color.grey};
@@ -34,18 +35,19 @@ const Select = styled.button`
 
 const SelectList = styled.ul`
     max-height: 240px;
-    width: 100%;
+    min-width: ${props => props.theme.width.l};
     box-sizing: border-box;
     list-style-type: none;
     padding: 0;
     margin: 0;
     box-shadow: 0px 6px 12px rgba(171, 190, 209, 0.3);
-    background-color: ${props => props.theme.color.white};
     overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
     top: 100%;
     z-index: 1;
+    ${props => props.theme.fontFamily};
+    background-color: ${props => props.theme.color.white};
     &:last-child {
         border-radius: 0 0 8px 8px;
     }
@@ -61,16 +63,17 @@ const SelectList = styled.ul`
 `
 
 const SelectItem = styled.li`
-    height: auto;
-    width: 100%;
     box-sizing: border-box;
-    padding: ${props => props.theme.spacing.s};
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    ${props => props.theme.fontFamily};
+    padding: ${props => props.theme.spacing.s};
+    ${text}
+    width: ${props => props.theme.width.l};
     &:hover {
         background: ${props => props.theme.color.inputHover};
-        font-weight: 600;
+        ${textBold}
     }
 `
 

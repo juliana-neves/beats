@@ -3,7 +3,7 @@ import { heading4, text, textBold } from "../Typography/Typography";
 
 const FooterContainer = styled.footer`
     background-color: ${props => props.theme.color.black};
-    padding: ${props => props.theme.spacing.m};
+    padding: ${props => props.theme.spacing.xl};
     margin-bottom: 0;
     margin-top: ${props => props.theme.spacing.l}
 `

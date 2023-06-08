@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
+import { text } from "../Typography/Typography";
 
 const LabelDropdown = styled.label`
     display: block;
     width: 100%;
     box-sizing: border-box;
-    font-weight: 400;
+    ${text};
 `
 
 const InputDropdown = styled.input`
@@ -18,8 +19,7 @@ const InputDropdown = styled.input`
     border-color: ${props => props.theme.color.greyLight};
     border-radius: ${props => props.theme.spacing.xs};
     height: 40px;
-    font-weight: 400;
-    font-size: 14px;
+    ${text};
     padding: ${props => props.theme.spacing.s};
     &:hover {
         border-color: ${props => props.theme.color.grey};
